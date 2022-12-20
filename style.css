@@ -1,0 +1,126 @@
+html {
+    font-family: sans-serif;
+    animation: background-color-anim 5s infinite;
+    background-image: url(bg-image.png);
+}
+
+body {
+    margin: 0;
+}
+
+.container-body {
+    display: flex;
+    justify-content: center;
+}
+
+.item-body {
+    width: 1000px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.container-short-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    border: 5px solid white;
+    border-radius: 30px;
+    margin: 0 10px 0 0;
+}
+
+.short-info {
+    font-size: 30px;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.navigation li {
+    flex-grow: 1;
+    list-style-type: none;
+    display: flex;
+    margin: 10px 10px 10px 0;
+}
+
+.navigation li a {
+    flex-grow: 1;
+    display: block;
+
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+
+    background-color: grey;
+    border: 5px solid white;
+    border-radius: 30px;
+    color: white;
+}
+
+.navigation li a:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid grey;
+    transition: .2s;
+}
+
+main {
+    display: flex;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#education,
+#skills,
+#contacts {
+    flex-grow: 1;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 30px;
+    margin: 10px 10px 10px 0;
+    padding: 20px;
+    font-size: 25px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.logo-RSS,
+.logo-GitHub,
+.logo-tg {
+    width: 200px;
+    filter: invert(1);
+    margin: 20px 0;
+}
+
+@keyframes background-color-anim {
+    0% {
+        background-color: #77a1b5;
+    }
+
+    50% {
+        background-color: grey;
+    }
+
+    100% {
+        background-color: #77a1b5;
+    }
+}
