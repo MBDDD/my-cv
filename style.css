@@ -15,9 +15,10 @@ body {
 
 .item-body {
     width: 1000px;
+    padding: 20px;
+
     background-color: black;
     color: white;
-    padding: 20px;
 }
 
 .container-short-info {
@@ -28,9 +29,10 @@ body {
 .avatar {
     width: 250px;
     height: 250px;
+    margin: 0 10px 0 0;
+
     border: 5px solid white;
     border-radius: 30px;
-    margin: 0 10px 0 0;
 }
 
 .short-info {
@@ -40,29 +42,31 @@ body {
 .navigation {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
+
+    background-color: grey;
 }
 
 .navigation li {
-    flex-grow: 1;
-    list-style-type: none;
     display: flex;
-    margin: 10px 10px 10px 0;
+    flex: 1 1 0px;
+    list-style-type: none;
 }
 
 .navigation li a {
     flex-grow: 1;
     display: block;
 
-    text-decoration: none;
-    font-size: 30px;
     text-align: center;
-    padding: 20px;
-    font-weight: bold;
+    text-decoration: none;
 
+    font-size: 30px;
+    padding: 20px;
+
+    font-weight: bold;
     background-color: grey;
     border: 5px solid white;
-    border-radius: 30px;
     color: white;
 }
 
@@ -75,24 +79,26 @@ body {
 
 main {
     display: flex;
+    justify-content: space-between;
 }
 
 .content-main {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 #education,
 #skills,
 #contacts {
     flex-grow: 1;
-    background-color: black;
-    border: 5px solid white;
     border-radius: 30px;
-    margin: 10px 10px 10px 0;
+    margin: 10px 0;
     padding: 20px;
     font-size: 25px;
+
+    background-color: black;
+    border: 5px solid white;
 }
 
 footer {
